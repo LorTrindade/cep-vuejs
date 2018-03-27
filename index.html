@@ -6,63 +6,18 @@
 
 </head>
 <body>
-<div id="vue" class="container">
+<div id="app" class="container">
     <div class="row">
         <form action="#" class="col-md-2  col-md-8">
             <h2>Buscando Cep com vuejs</h2>
             <hr>
-
-            <div class="row">
-                <div class="col-md-3">
-                    <div class="form-group">
-                        <label for="inputCep">Cep</label>
-                        <input type="text" class="form-control" id="inputCep" v-model="cep" v-on:keyup="buscar">
-                    </div>
-                </div>
-
-                <div class="col-md-9"></div>
-            </div>
-            <p class="text-danger" style="display:none;" v-show="naoLocalizado"><strong>CEP não encontrado!!!</strong></p>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="form-group">
-                        <label for="inputLogradouro">Logradouro</label>
-                        <input type="text" class="form-control" id="inputLogradouro" v-model="endereco.logradouro" ref="logradouro">
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="form-group">
-                        <label for="inputNumero">Numero</label>
-                        <input type="email" class="form-control" id="inputNumero" ref="numero">
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-md-5">
-                    <div class="form-group">
-                        <label for="inputBairro">Bairro</label>
-                        <input type="text" class="form-control" id="inputBairro" v-model="endereco.bairro">
-                    </div>
-                </div>
-                <div class="col-md-5">
-                    <div class="form-group">
-                        <label for="inputCidade">Cidade</label>
-                        <input type="text" class="form-control" id="inputCidade" v-model="endereco.localidade">
-                    </div>
-                </div>
-                <div class="col-md-2">
-                    <div class="form-group">
-                        <label for="inputEstado">Estado</label>
-                        <input type="text" class="form-control" id="inputEstado" v-model="endereco.uf">
-                    </div>
-                </div>
-            </div>
+                <cep-component></cep-component>
         </form>
     </div>
 </div><!--Fim do container-->
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
-    <script src="components/form-endereco/index.js"></script>
+    <script src="components/form-endereco/cep-component.js"></script>
     <script src="bower_components/vue/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
