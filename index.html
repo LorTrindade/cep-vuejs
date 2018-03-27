@@ -22,6 +22,7 @@
 
                 <div class="col-md-9"></div>
             </div>
+            <p class="text-danger" style="display:none;" v-show="naoLocalizado"><strong>CEP não encontrado!!!</strong></p>
             <div class="row">
                 <div class="col-md-5">
                     <div class="form-group">
@@ -58,9 +59,10 @@
             </div>
         </form>
     </div>
-</div>
+</div><!--Fim do container-->
 
     <script src="bower_components/jquery/dist/jquery.js"></script>
+    <script src="components/form-endereco/index.js"></script>
     <script src="bower_components/vue/dist/vue.js"></script>
     <script src="app.js"></script>
 </body>
