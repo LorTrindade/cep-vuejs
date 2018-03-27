@@ -1,0 +1,22 @@
+{
+  "name": "cep-vuejs",
+  "homepage": "https://github.com/LorTrindade/cep-vuejs",
+  "authors": [
+    "Lorhana Trindade <lortrindade@gmail.com>"
+  ],
+  "description": "",
+  "main": "",
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "^3.3.1",
+    "bootstrap": "^4.0.0",
+    "vue": "^2.5.16"
+  }
+}
